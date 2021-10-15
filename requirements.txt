@@ -9,3 +9,4 @@ pillow
 tqdm
 ipyplot
 timm
+albumentations==0.4.6

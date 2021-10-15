@@ -37,7 +37,7 @@ class ImagesDataset(Dataset):
         img = io.imread(self.image_paths[idx])
         img = img[...,:3] # Some images have 4 channels, fix that
         if self.transform:
-            img = self.transform(img)
+            img = self.transform(image=img)
 
         return img, label
 
